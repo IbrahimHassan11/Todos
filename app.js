@@ -9,7 +9,7 @@ const search = document.querySelector(".head input");
 
 addTodo.addEventListener("submit", (e) => {
   e.preventDefault();
-  if(e.length){
+  if(addTodo.more.value.trim().length){
   ul.innerHTML +=
   `<li>
   <span>${addTodo.more.value.trim()}</span>
