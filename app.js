@@ -9,12 +9,15 @@ const search = document.querySelector(".head input");
 
 addTodo.addEventListener("submit", (e) => {
   e.preventDefault();
+  if(e.length){
   ul.innerHTML +=
   `<li>
   <span>${addTodo.more.value.trim()}</span>
   <ion-icon class="icon" name="trash-outline"></ion-icon>
   </li>`;
   addTodo.reset();
+  }
+
 });
 
 
